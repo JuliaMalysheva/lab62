@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lab62</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_bicycle">Велосипед</string>
+    <string name="bicycle_rental_price">Стоимость аренды: 5 руб/час</string>
+    <string name="title_rent">Аренда</string>
+    <string name="title_kick_scooter">Самокат</string>
+    <string name="kick_scooter_rental_price">Стоимость аренды: 8 руб/час</string>
+    <string name="title_scooter">Мотороллер</string>
+    <string name="scooter_rental_price">Стоимость аренды: 15 руб/час</string>
+    <string name="title_julia">Юля</string>
+    <string name="title_marianna">Марианна</string>
+    <string name="title_liza">Лиза</string>
+</resources>

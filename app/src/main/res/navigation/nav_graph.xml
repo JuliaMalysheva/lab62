@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/juliaFragment1">
+
+    <fragment
+        android:id="@+id/juliaFragment1"
+        android:name="com.example.lab62.JuliaFragment1"
+        android:label="fragment_julia1"
+        tools:layout="@layout/fragment_julia1" />
+    <fragment
+        android:id="@+id/mariannaFragment1"
+        android:name="com.example.lab62.MariannaFragment1"
+        android:label="fragment_marianna1"
+        tools:layout="@layout/fragment_marianna1" />
+    <fragment
+        android:id="@+id/lizaFragment1"
+        android:name="com.example.lab62.LizaFragment1"
+        android:label="fragment_liza1"
+        tools:layout="@layout/fragment_liza1" />
+</navigation>
