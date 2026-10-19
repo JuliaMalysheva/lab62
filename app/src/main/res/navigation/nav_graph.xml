@@ -9,7 +9,11 @@
         android:id="@+id/juliaFragment1"
         android:name="com.example.lab62.JuliaFragment1"
         android:label="fragment_julia1"
-        tools:layout="@layout/fragment_julia1" />
+        tools:layout="@layout/fragment_julia1" >
+        <action
+            android:id="@+id/action_juliaFragment1_to_juliaFragment2"
+            app:destination="@id/juliaFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/mariannaFragment1"
         android:name="com.example.lab62.MariannaFragment1"
@@ -20,4 +24,22 @@
         android:name="com.example.lab62.LizaFragment1"
         android:label="fragment_liza1"
         tools:layout="@layout/fragment_liza1" />
+    <fragment
+        android:id="@+id/juliaFragment2"
+        android:name="com.example.lab62.JuliaFragment2"
+        android:label="fragment_julia2"
+        tools:layout="@layout/fragment_julia2" >
+        <action
+            android:id="@+id/action_juliaFragment2_to_juliaFragment3"
+            app:destination="@id/juliaFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/juliaFragment3"
+        android:name="com.example.lab62.JuliaFragment3"
+        android:label="fragment_julia3"
+        tools:layout="@layout/fragment_julia3" >
+        <action
+            android:id="@+id/action_juliaFragment3_to_juliaFragment1"
+            app:destination="@id/juliaFragment1" />
+    </fragment>
 </navigation>
