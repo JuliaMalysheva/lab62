@@ -37,5 +37,9 @@
         android:id="@+id/lizaFragment3"
         android:name="com.example.lab62.LizaFragment3"
         android:label="fragment_liza3"
-        tools:layout="@layout/fragment_liza3" />
+        tools:layout="@layout/fragment_liza3" >
+        <action
+            android:id="@+id/action_lizaFragment3_to_lizaFragment1"
+            app:destination="@id/lizaFragment1" />
+    </fragment>
 </navigation>
