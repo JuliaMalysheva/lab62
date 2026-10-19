@@ -14,10 +14,32 @@
         android:id="@+id/mariannaFragment1"
         android:name="com.example.lab62.MariannaFragment1"
         android:label="fragment_marianna1"
-        tools:layout="@layout/fragment_marianna1" />
+        tools:layout="@layout/fragment_marianna1" >
+        <action
+            android:id="@+id/action_mariannaFragment1_to_mariannaFragment2"
+            app:destination="@id/mariannaFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/lizaFragment1"
         android:name="com.example.lab62.LizaFragment1"
         android:label="fragment_liza1"
         tools:layout="@layout/fragment_liza1" />
+    <fragment
+        android:id="@+id/mariannaFragment2"
+        android:name="com.example.lab62.MariannaFragment2"
+        android:label="fragment_marianna2"
+        tools:layout="@layout/fragment_marianna2" >
+        <action
+            android:id="@+id/action_mariannaFragment2_to_mariannaFragment3"
+            app:destination="@id/mariannaFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/mariannaFragment3"
+        android:name="com.example.lab62.MariannaFragment3"
+        android:label="fragment_marianna3"
+        tools:layout="@layout/fragment_marianna3" >
+        <action
+            android:id="@+id/action_mariannaFragment3_to_mariannaFragment1"
+            app:destination="@id/mariannaFragment1" />
+    </fragment>
 </navigation>
