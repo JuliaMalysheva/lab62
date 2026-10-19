@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    tools:context=".LizaFragment3"
+    android:background="#f8eec4">
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lemon"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#d9a711"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/lemonImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/lemon_pic"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+    <TextView
+        android:id="@+id/descTitle3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/desc_title"
+        app:layout_constraintTop_toBottomOf="@id/lemonImage"
+        app:layout_constraintStart_toStartOf="@id/lemonImage"
+        app:layout_constraintEnd_toEndOf="@id/lemonImage"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#d9a711" />
+
+    <TextView
+        android:id="@+id/lemonDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/lemon_description"
+        app:layout_constraintTop_toBottomOf="@id/descTitle3"
+        app:layout_constraintStart_toStartOf="@id/lemonImage"
+        app:layout_constraintEnd_toEndOf="@id/lemonImage"
+        android:paddingTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

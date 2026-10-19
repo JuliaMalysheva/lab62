@@ -19,5 +19,23 @@
         android:id="@+id/lizaFragment1"
         android:name="com.example.lab62.LizaFragment1"
         android:label="fragment_liza1"
-        tools:layout="@layout/fragment_liza1" />
+        tools:layout="@layout/fragment_liza1" >
+        <action
+            android:id="@+id/action_lizaFragment1_to_lizaFragment2"
+            app:destination="@id/lizaFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/lizaFragment2"
+        android:name="com.example.lab62.LizaFragment2"
+        android:label="fragment_liza2"
+        tools:layout="@layout/fragment_liza2" >
+        <action
+            android:id="@+id/action_lizaFragment2_to_lizaFragment3"
+            app:destination="@id/lizaFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/lizaFragment3"
+        android:name="com.example.lab62.LizaFragment3"
+        android:label="fragment_liza3"
+        tools:layout="@layout/fragment_liza3" />
 </navigation>
