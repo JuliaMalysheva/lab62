@@ -12,4 +12,8 @@
     <string name="title_julia">Юля</string>
     <string name="title_marianna">Марианна</string>
     <string name="title_liza">Лиза</string>
+    <string name="orange">Апельсин</string>
+    <string name="orange_pic">Orange pic</string>
+    <string name="desc_title">Описание</string>
+    <string name="orange_description">Апельсин (лат. Cītrus × sinēnsis) — это плодовое дерево; вид рода Цитрус семейства Рутовые, а также его плод. Это самая распространённая цитрусовая культура в тропических и субтропических областях мира.\\n\\nИнтересный факт: Мода на выращивание апельсиновых деревьев в Европе привела к появлению специальных стеклянных сооружений, которые назвали «оранжереями» — от французского orange («апельсин»).</string>
 </resources>

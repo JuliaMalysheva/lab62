@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LizaFragment1">
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    tools:context=".LizaFragment1"
+    android:background="#f8d99e"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orange"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#ec7808"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="20dp"
+        />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/orangeImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/orange_pic"
+        android:maxHeight="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/desc_title"
+        app:layout_constraintTop_toBottomOf="@id/orangeImage"
+        app:layout_constraintStart_toStartOf="@id/orangeImage"
+        app:layout_constraintEnd_toEndOf="@id/orangeImage"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ec7808"
+        />
+
+    <TextView
+        android:id="@+id/orangeDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/orange_description"
+        app:layout_constraintTop_toBottomOf="@id/descTitle"
+        app:layout_constraintStart_toStartOf="@id/orangeImage"
+        app:layout_constraintEnd_toEndOf="@id/orangeImage"
+        android:paddingTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
